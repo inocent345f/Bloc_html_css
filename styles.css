@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F4D04E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.cardcard{
+    background-color: black;    
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 1);
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    border-color: black;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black;
+    width: 384px;
+    height: 522px;
+    overflow: hidden;   
+}
+
+.image-container img {
+    width: 336px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 24px 5px 24px 5px;
+    width: 336px;
+    height: 194px;
+    text-align: left;
+
+}
+
+.label {
+    font-family:'Figtree',sans-serif;
+    font-weight: 800;
+    background-color: #F4D04E;
+    color: black;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 0px;
+    border-radius: 4px;
+}
+
+.date {
+    color: hsl(0, 0%, 7%);
+    font-size: 14px;
+    font-family: 'figtree',sans-serif;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    display: block;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 800;
+    font-family: 'figtree',sans-serif;
+    margin-top: 20px;
+    margin-bottom: 26px;
+    cursor:pointer;
+    
+}
+h1:hover{
+    color:#F4D04E;
+
+}
+
+
+p {
+    color: hsl(0, 0%, 42%);
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Figtree',sans-serif;
+    font-weight: 500;
+
+}
+.authorcard {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 50px;
+
+}
+
+.authorcard img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+}
+
+span{
+    font-family: 'Figtree';
+    font-weight: 800;
+    font-size: 14px;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 375px) {
+    .cardcard {
+        width: 80%; 
+        background-color: black;    
+        border-radius: 20px;
+        position: relative;
+        box-shadow: 8px 8px 0 rgba(0, 0, 0, 1);
+    }
+
+    .card {
+        width: 100%; 
+        padding: 15px;
+        height: auto;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        padding: 15px 5px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 18px; 
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .authorcard {
+        padding-top: 20px;
+    }
+
+    .authorcard img {
+        width: 25px;
+        height: 25px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+}
